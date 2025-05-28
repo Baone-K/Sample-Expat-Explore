@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Details | Expat Explore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+  <!-- Navigation (same as index.html) -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="Expat Explore Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="signin.html">Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section" style="background-image: url('images/europe-tour.jpg'); background-size: cover;">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold">European Grand Tour</h1>
+      <p class="lead">14 days, 5 countries, all the highlights of Europe.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-7">
+          <div class="card p-4">
+            <h2 class="mb-3">Tour Highlights</h2>
+            <ul>
+              <li>Visit Paris, Rome, Amsterdam, Berlin, and Prague</li>
+              <li>Luxury coach travel and 4-star hotels</li>
+              <li>Daily breakfast and selected dinners</li>
+              <li>Expert local guides</li>
+            </ul>
+            <h3 class="mt-4">Itinerary</h3>
+            <p>Day 1: Paris | Day 2: Amsterdam | Day 3: Berlin | ...</p>
+            <a href="tickets.html" class="btn btn-primary mt-3">Book This Tour</a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img src="images/europe-tour.jpg" class="img-fluid rounded shadow" alt="European Grand Tour">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Asian Explorer Tour Detail Section -->
+<section class="tour-details-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/tours/asia-explorer.jpg') center/cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="text-white display-4 fw-bold">Asian Explorer</h1>
+                <div class="d-flex align-items-center text-white mb-4">
+                    <span class="me-3"><i class="fas fa-calendar-alt me-2"></i>21 days</span>
+                    <span><i class="fas fa-map-marker-alt me-2"></i>5 countries</span>
+                </div>
+                <div class="rating mb-4">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <span class="ms-2 text-white">4.7 (154 reviews)</span>
+                </div>
+                <a href="tickets.html" class="btn btn-danger btn-lg me-3">Book Now</a>
+                <a href="#itinerary-asia" class="btn btn-outline-light btn-lg">View Itinerary</a>
+            </div>
+            <div class="col-lg-4">
+                <div class="price-card bg-white p-4 rounded shadow">
+                    <h4 class="text-danger">From $3,199</h4>
+                    <p class="text-muted">per person</p>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="departure-date-asia" class="form-label">Departure Date</label>
+                        <select class="form-select" id="departure-date-asia">
+                            <option>June 5, 2025</option>
+                            <option>July 3, 2025</option>
+                            <option>August 14, 2025</option>
+                            <option>September 11, 2025</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="room-type-asia" class="form-label">Room Type</label>
+                        <select class="form-select" id="room-type-asia">
+                            <option>Double Room</option>
+                            <option>Single Room (+$500)</option>
+                            <option>Premium Double (+$250)</option>
+                        </select>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Check Availability</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="mb-4">Tour Highlights</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3 text-danger">
+                                <i class="fas fa-check-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Ancient Wonders</h5>
+                                <p class="text-muted">Visit the Great Wall of China, Angkor Wat, and Tokyo’s historic temples.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3 text-danger">
+                                <i class="fas fa-check-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Street Food & Culture</h5>
+                                <p class="text-muted">Sample authentic cuisine in Bangkok, Hanoi, and Seoul’s bustling markets.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3 text-danger">
+                                <i class="fas fa-check-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Modern Marvels</h5>
+                                <p class="text-muted">Experience the neon lights of Tokyo and the skyline of Singapore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3 text-danger">
+                                <i class="fas fa-check-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Natural Beauty</h5>
+                                <p class="text-muted">Cruise Halong Bay and explore the rice terraces of Bali.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick Facts</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-hotel text-danger me-2"></i>Accommodation</span>
+                                <span>4-star hotels</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-utensils text-danger me-2"></i>Meals</span>
+                                <span>Breakfast daily, 7 dinners</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-bus text-danger me-2"></i>Transport</span>
+                                <span>Private coach, flights</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-user-tie text-danger me-2"></i>Tour Guide</span>
+                                <span>Expert local guide</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-users text-danger me-2"></i>Group Size</span>
+                                <span>Max 20 people</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light" id="itinerary-asia">
+    <div class="container">
+        <h2 class="text-center mb-5">Tour Itinerary</h2>
+        <div class="accordion" id="itineraryAccordionAsia">
+            <div class="accordion-item mb-3 border-0 shadow-sm">
+                <h2 class="accordion-header" id="headingAsiaOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAsiaOne">
+                        <span class="badge bg-danger me-3">Day 1</span> Tokyo, Japan - Arrival
+                    </button>
+                </h2>
+                <div id="collapseAsiaOne" class="accordion-collapse collapse show" data-bs-parent="#itineraryAccordionAsia">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <img src="images/itinerary/tokyo.jpg" alt="Tokyo" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-8">
+                                <p>Arrive in Tokyo and transfer to your hotel. Evening welcome dinner and orientation with your guide.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-utensils text-danger me-2"></i>Dinner included</li>
+                                    <li><i class="fas fa-hotel text-danger me-2"></i>Overnight: Shinjuku Granbell Hotel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mb-3 border-0 shadow-sm">
+                <h2 class="accordion-header" id="headingAsiaTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAsiaTwo">
+                        <span class="badge bg-danger me-3">Day 2</span> Tokyo - City Tour
+                    </button>
+                </h2>
+                <div id="collapseAsiaTwo" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordionAsia">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <img src="images/itinerary/tokyo-city.jpg" alt="Tokyo City Tour" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-8">
+                                <p>Full-day guided tour of Tokyo, including visits to the Senso-ji Temple, Meiji Shrine, and a traditional tea ceremony.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-utensils text-danger me-2"></i>Breakfast included</li>
+                                    <li><i class="fas fa-hotel text-danger me-2"></i>Overnight: Shinjuku Granbell Hotel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+ <!-- African Safari Tour Detail Section -->
+<section class="tour-details-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/tours/africa-safari.jpg') center/cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="text-white display-4 fw-bold">African Safari</h1>
+                <div class="d-flex align-items-center text-white mb-4">
+                    <span class="me-3"><i class="fas fa-calendar-alt me-2"></i>10 days</span>
+                    <span><i class="fas fa-map-marker-alt me-2"></i>3 countries</span>
+                </div>
+                <div class="rating mb-4">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <span class="ms-2 text-white">4.8 (97 reviews)</span>
+                </div>
+                <a href="tickets.html" class="btn btn-danger btn-lg me-3">Book Now</a>
+                <a href="#itinerary-africa" class="btn btn-outline-light btn-lg">View Itinerary</a>
+            </div>
+            <div class="col-lg-4">
+                <div class="price-card bg-white p-4 rounded shadow">
+                    <h4 class="text-danger">From $2,899</h4>
+                    <p class="text-muted">per person</p>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="departure-date-africa" class="form-label">Departure Date</label>
+                        <select class="form-select" id="departure-date-africa">
+                            <option>July 20, 2025</option>
+                            <option>August 17, 2025</option>
+                            <option>September 14, 2025</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="room-type-africa" class="form-label">Room Type</label>
+                        <select class="form-select" id="room-type-africa">
+                            <option>Double Tent</option>
+                            <option>Single Tent (+$300)</option>
+                            <option>Luxury Lodge (+$600)</option>
+                        </select>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Check Availability</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="mb-4">Tour Highlights</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3 text-danger">
+                                <i class="fas fa-check-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Big Five Safaris</h5>
+                                <p class="text-muted">Game drives in Kruger, Chobe, and Serengeti National Parks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3 text-danger">
+                                <i class="fas fa-check-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Victoria Falls</h5>
+                                <p class="text-muted">Marvel at one of the world’s greatest natural wonders.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3 text-danger">
+                                <i class="fas fa-check-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Cultural Encounters</h5>
+                                <p class="text-muted">Visit local villages and experience authentic African hospitality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="me-3 text-danger">
+                                <i class="fas fa-check-circle fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5>Luxury Camping</h5>
+                                <p class="text-muted">Stay in comfortable tents and lodges under the African sky.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick Facts</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-hotel text-danger me-2"></i>Accommodation</span>
+                                <span>Luxury tents/lodges</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-utensils text-danger me-2"></i>Meals</span>
+                                <span>All meals included</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-bus text-danger me-2"></i>Transport</span>
+                                <span>Safari vehicles</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-user-tie text-danger me-2"></i>Tour Guide</span>
+                                <span>Expert safari guide</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span><i class="fas fa-users text-danger me-2"></i>Group Size</span>
+                                <span>Max 16 people</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light" id="itinerary-africa">
+    <div class="container">
+        <h2 class="text-center mb-5">Tour Itinerary</h2>
+        <div class="accordion" id="itineraryAccordionAfrica">
+            <div class="accordion-item mb-3 border-0 shadow-sm">
+                <h2 class="accordion-header" id="headingAfricaOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfricaOne">
+                        <span class="badge bg-danger me-3">Day 1</span> Johannesburg, South Africa - Arrival
+                    </button>
+                </h2>
+                <div id="collapseAfricaOne" class="accordion-collapse collapse show" data-bs-parent="#itineraryAccordionAfrica">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <img src="images/itinerary/johannesburg.jpg" alt="Johannesburg" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-8">
+                                <p>Arrive in Johannesburg and transfer to your hotel. Meet your guide and group for a welcome dinner and briefing.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-utensils text-danger me-2"></i>Dinner included</li>
+                                    <li><i class="fas fa-hotel text-danger me-2"></i>Overnight: Sandton Sun Hotel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mb-3 border-0 shadow-sm">
+                <h2 class="accordion-header" id="headingAfricaTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfricaTwo">
+                        <span class="badge bg-danger me-3">Day 2</span> Kruger National Park - Safari
+                    </button>
+                </h2>
+                <div id="collapseAfricaTwo" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordionAfrica">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <img src="images/itinerary/kruger.jpg" alt="Kruger National Park" class="img-fluid rounded">
+                            </div>
+                            <div class="col-md-8">
+                                <p>Full-day safari in Kruger National Park. Spot the Big Five and enjoy a picnic lunch in the bush.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-utensils text-danger me-2"></i>Breakfast and lunch included</li>
+                                    <li><i class="fas fa-hotel text-danger me-2"></i>Overnight: Kruger Rest Camp</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer (same as index.html) -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Expat Explore. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Expat Explore</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Expat Explore Logo" width="180">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signin.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Update the login-hero section -->
+   <section class="login-hero">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Welcome Back</h1>
+        <p class="lead">Sign in to access your account and bookings</p>
+    </div>
+    </section>
+
+   <!-- Update the form card -->
+   <div class="card shadow form-card">
+    <section class="form-bg-section" style="background-image: linear-gradient(rgba(24,24,24,0.8),rgba(24,24,24,0.8)), url('WhatsApp\ Image\ 2025-04-29\ at\ 22.08.04_15dc76c2.jpg');">
+       <div class="container">
+           <div class="row justify-content-center">
+               <div class="col-md-6">
+                   <div class="card p-4 shadow form-card">
+                        <h2 class="mb-4 text-center">Login</h2>
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="loginEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-danger w-100">Sign In</button>
+                                <div class="text-center mt-3">
+                                    <a href="forgotpassword.html">Forgot your password?</a>
+                                </div>
+                            </form>
+                            <div class="text-center mt-4">
+                                <p>Don't have an account? <a href="signin.html">Sign up here</a></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Footer same as index.html -->
+<footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Expat Explore. All rights reserved.</p>
+    </div>
+  </footer>
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <!-- Bootstrap JS and Custom JS same as index.html -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, you would validate credentials with your backend
+            // For this demo, we'll just show a success popup
+            showSuccessPopup('Logged in successfully! Redirecting to your dashboard...');
+            
+            // Redirect after a delay
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
